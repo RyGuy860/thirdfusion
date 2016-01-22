@@ -36,37 +36,139 @@
 						<ul class="nav navbar-nav">
 							<li class="active"><a href="#/">Home</a></li>
 							<li><a ng-href="#">About</a></li>
-							<li><a ng-href="#/">Portfolio</a></li>
-							<li><a ng-href="#">Services</a></li>
+							<li><a ng-href="#/">Services</a></li>
+							<li><a ng-href="#">Portfolio</a></li>
 							<li><a ng-href="#/">Contact</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div id="Home" class="container">
-			<div class="jumbotron">
-				<img class="img-responsive" src="images/HomeSlider.jpg" id="HomeSlider">
+
+		<div id="Home" class="container-fluid">
+			<div class="jumbotron" id="jumbotron1">
+				<img class="img-responsive" src="images/headerMBP.jpg" id="HomeSlider">
 			</div>
-		</div>
+
 		<div id="About" class="container-fluid">
-			<div class="row">
+			<div class="row" id="about">
 				<h1>About</h1>
+				<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut. </p>
 			</div>
 		</div>
-		
-		<div id="Portfolio" class="container-fluid">
-			<div class="row">
-				<h1>Portfolio</h1>
-			</div>
-		</div>
-		
+
 		<div id="Services" class="container-fluid">
-			<div class="row">
+			<div class="row" id="services">
 				<h1>Services</h1>
+				<div class="col-md-4 svc">
+					<h3>Responsive Website Design</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+					<button>Learn more </button>
+
+				</div>
+				<div class="col-md-4 svc">
+					<h3>Mobile Apps for your business</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+					<button>Learn more </button>
+
+				</div>
+				<div class="col-md-4 svc">
+					<h3>Custom Photography & Videography</h3>
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.</p>
+					<button>Learn more </button>
+
+				</div>
 			</div>
 		</div>
-		
+		<div class="row">
+			<div class="col-md-12">
+				<h1 id="headline">Business Solutions that drives results</h1>
+				<img class="img-responsive" src="images/infographyapp.jpg" id="headlineimg">
+			</div>
+
+		</div>
+		<!-- Portfolio start-->
+        <div id="Portfolio" class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <h1>Portfolio</h1>
+                </div>
+            </div>
+            <ul class="caption-style-4" id="ulimg">
+                <div class="row">
+                    <li class="col-md-4">
+                        <img class="img-responsive" src="images/happyhour.jpg">
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h3 class="text-center">Resturants</h3>
+
+                                <a href="http://ryguy860.github.io/frontend-nanodegree-arcade-game/   ">Link</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4">
+                        <img class="img-responsive" src="images/autoRepair.jpg">
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h3 class="text-center">Automotive Dealers</h3>
+
+                                <a href="http://ryguy860.github.io/Neighborhood-Map/	">Link</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4">
+                        <img class="img-responsive" src="images/smb.jpg">
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h3 class="text-center">Retail</h3>
+
+                                <a href="http://rocdigitalpictures.com">Link</a>
+                            </div>
+                        </div>
+                    </li>
+
+                </div>
+                <div class="row">
+                    <li class="col-md-4">
+                        <img class="img-responsive" src="images/bars.jpg">
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h3 class="text-center">Bars & Clubs</h3>
+
+                                <a href="http://newgenerationwealth.com/">Link</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4">
+                        <img class="img-responsive" src="images/beauty.jpeg">
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h3 class="text-center">Health & Beauty</h3>
+
+                                <a href="http://ryguy860.github.io/AGL/">Link</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-4">
+                        <img class="img-responsive" src="images/slide1-imac.png">
+                        <div class="caption">
+                            <div class="blur"></div>
+                            <div class="caption-text">
+                                <h3 class="text-center">More</h3>
+
+                            </div>
+                        </div>
+                    </li>
+            </ul>
+            </div>
+        </div>
+
 		<div id="Contact" class="container-fluid">
 			<div class="row">
 				<h1>Contact</h1>
@@ -74,7 +176,7 @@
 		</div>
 		<!-- Footer -->
 		<footer class="text-center">
-			
+
 		</footer>
 	    <script type="text/javascript" src="scripts/app.js"></script>
 	</body>

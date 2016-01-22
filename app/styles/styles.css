@@ -1,4 +1,39 @@
 body {
   padding: 0;
+  margin: 0;
+
+
+}
+
+h1 {
+	text-align: left;
+}
+
+
+#about {
+
+	text-align: center;
+	font-size: 3em;
+}
+
+#services {
+	background-color: #52504A;
+}
+
+.svc {
+	text-align: center;
+}
+
+#headline {
+	text-align: center;
+}
+
+#headlineimg{
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+img {
 
 }
