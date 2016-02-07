@@ -1,10 +1,151 @@
+html body {
+    margin: 0px;
+    padding: 0px;
+}  
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+}
+.navbar-nav li {
+      float: none;
+      display: inline-block;
+    }
+
+#toplogo{
+    float: left;
+    padding-top: 15px;
+}
+  
+#jumbotronHome{
+    background-size: cover;
+    overflow: hidden;
+    
+    margin: auto;
+    padding-bottom: 100px;
+    padding-top: 100px
+}
+
 .photoSvc {
     max-width: 100%;
     max-height: 250px;
     
 }
 
-ul
-{
+ul{
 list-style-type: none;
 }
+
+.portimg{
+    width: 100%;
+    margin: 0px;
+    padding-top: 10px;
+    height: 300px; 
+    float: none;
+}
+
+	
+	footer {
+    background-color: #2d2d30;
+    color: #f5f5f5;
+    padding-bottom: 2px;
+	}
+
+	footer a {
+	    color: #f5f5f5;
+	}
+
+	footer a:hover {
+	    color: #777;
+	    text-decoration: none;
+	}
+
+.caption-style-4 {
+		list-style-type: none;
+		margin: 0px;
+		padding: 0px;
+
+	}
+
+	.caption-style-4 li {
+		float: left;
+		padding: 0px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.caption-style-4 li:hover .caption {
+		opacity: 1;
+	}
+
+	.caption-style-4 li:hover img {
+		opacity: 1;
+		transform: scale(1.15,1.15);
+		-webkit-transform:scale(1.15,1.15);
+		-moz-transform:scale(1.15,1.15);
+		-ms-transform:scale(1.15,1.15);
+		-o-transform:scale(1.15,1.15);
+	}
+
+
+	.caption-style-4 img {
+		margin: 0px;
+		padding: 0px;
+		float: left;
+		z-index: 4;
+	}
+
+
+	.caption-style-4 .caption {
+		cursor: pointer;
+		position: absolute;
+		opacity: 0;
+		-webkit-transition:all 0.45s ease-in-out;
+		-moz-transition:all 0.45s ease-in-out;
+		-o-transition:all 0.45s ease-in-out;
+		-ms-transition:all 0.45s ease-in-out;
+		transition:all 0.45s ease-in-out;
+	}
+
+	.caption-style-4 img {
+		-webkit-transition:all 0.25s ease-in-out;
+		-moz-transition:all 0.25s ease-in-out;
+		-o-transition:all 0.25s ease-in-out;
+		-ms-transition:all 0.25s ease-in-out;
+		transition:all 0.25s ease-in-out;
+	}
+	.caption-style-4 .blur {
+		background-color: rgba(0,0,0,0.65);
+		height: 400px;
+		width: 500px;
+		z-index: 5;
+		position: absolute;
+	}
+
+	.caption-style-4 .caption-text h1 {
+		text-transform: uppercase;
+		font-size: 24px;
+	}
+	.caption-style-4 .caption-text {
+		z-index: 10;
+		color: #fff;
+		position: absolute;
+		width: 400px;
+		height: 500px;
+		text-align: center;
+		top:150px;
+        margin-left: 40px;
+	}
+#footernav > ul{
+    float: left;
+}
+
+.fa {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#copyright {
+    padding-top: 15px;
+}
+
