@@ -1,9 +1,9 @@
 var myApp = angular.module('myApp', ['ngRoute']);
    
-    myApp.config(function ($routeProvider){
+    myApp.config(function ($routeProvider, $locationProvider){
         
         $routeProvider
-        .when('/home', {
+        .when('/', {
              templateUrl: 'pages/home.html',
              controller: 'mainController'
         
@@ -26,7 +26,10 @@ var myApp = angular.module('myApp', ['ngRoute']);
         .when('/portfolio', {
             templateUrl: 'pages/portfolio.html',
             controller: 'mainController'
-        })
+        });
+
+        // use the HTML5 History API
+        $locationProvider.html5Mode(true);
   
 });
 
