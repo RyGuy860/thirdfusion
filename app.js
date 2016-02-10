@@ -1,13 +1,12 @@
-var myApp = angular.module('myApp', ['ngRoute']);
+var app = angular.module('app', ['ngRoute']);
    
-    myApp.config(function ($routeProvider, $locationProvider){
+    app.config(function ($routeProvider, $locationProvider){
         
         $routeProvider
         .when('/', {
              templateUrl: 'pages/home.html',
-             controller: 'mainController'
-        
-                 })   
+             controller: 'mainController'        
+        })   
         .when('/contact', {
             templateUrl: 'pages/contact.html',
             controller: 'mainController'
@@ -23,9 +22,19 @@ var myApp = angular.module('myApp', ['ngRoute']);
             controller: 'mainController'
         })
         
+        .when('/services/:serviceId', {
+            templateUrl: 'pages/services-detail.html',
+            controller: 'servicesController'
+        })
+
         .when('/portfolio', {
             templateUrl: 'pages/portfolio.html',
             controller: 'mainController'
+        })
+        
+        .when('/portfolio/:portfolioId', {
+            templateUrl: 'pages/portfolio-industry.html',
+            controller: 'portfolioController'
         });
 
         // use the HTML5 History API
@@ -33,6 +42,16 @@ var myApp = angular.module('myApp', ['ngRoute']);
   
 });
 
-myApp.controller('mainController',['$scope','$log', function($scope, $log){
+app.controller('mainController',['$scope','$log', function($scope, $log){
     
+}]);
+
+app.controller('servicesController',['$scope', '$routeParams', 
+    function($scope, $routeParams){
+        $scope.serviceId = $routeParams.serviceId;
+}]);
+
+app.controller('portfolioController',['$scope', '$routeParams', 
+    function($scope, $routeParams){
+        $scope.portfolioId = $routeParams.portfolioId;
 }]);
