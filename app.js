@@ -41,6 +41,9 @@ var app = angular.module('app', ['ngRoute']);
         $locationProvider.html5Mode(true);
   
 });
+  app.run(function ($browser) {
+    $browser.baseHref = function () { return "/" };
+  });
 
 app.controller('mainController',['$scope','$log', function($scope, $log){
     

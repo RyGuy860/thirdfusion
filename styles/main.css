@@ -168,8 +168,8 @@ footer a:hover {
 	top:150px;
 	margin-left: 40px;
 }
-#footernav > ul{
-	float: left;
+#footernav {
+	margin-left: 73px
 }
 
 .fa {
